@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="Местоположение">Местоположение</string>
+    <string name="Сегодня">Сегодня</string>
+    <string name="todo">TODO</string>
+    <string name="Дата">Дата</string>
+    <string name="Дата">Дата</string>
+    <string name="Дата">Дата</string>
+    <string name="Дата">Дата</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="Дата">Дата</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="Дата">Дата</string>
+    <string name="Дата">Дата</string>
 </resources>
