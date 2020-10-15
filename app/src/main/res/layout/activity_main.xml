@@ -6,17 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="413dp"
-        android:layout_height="325dp"
-        android:layout_marginTop="334dp"
-        android:layout_marginBottom="1dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="415dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="398dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="date"
+            android:text="@string/Сегодня" />
+
+        <EditText
+            android:id="@+id/editTextNumber9"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/weatherdata" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="329dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Дата" />
+                android:text="@string/Дата" />
 
             <EditText
                 android:id="@+id/editTextNumber5"
@@ -37,8 +66,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                android:text="данные погоды
-" />
+                android:text="@string/weatherdata" />
 
             <EditText
                 android:id="@+id/editTextDate10"
@@ -46,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Дата" />
+                android:text="@string/Дата" />
 
             <EditText
                 android:id="@+id/editTextNumber4"
@@ -54,8 +82,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                android:text="данные погоды
-" />
+                android:text="@string/weatherdata" />
 
             <EditText
                 android:id="@+id/editTextDate9"
@@ -63,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Дата" />
+                android:text="@string/Дата" />
 
             <EditText
                 android:id="@+id/editTextNumber6"
@@ -71,8 +98,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                android:text="данные погоды
-" />
+                android:text="@string/weatherdata" />
 
             <EditText
                 android:id="@+id/editTextDate8"
@@ -80,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Дата" />
+                android:text="@string/Дата" />
 
             <EditText
                 android:id="@+id/editTextNumber3"
@@ -88,8 +114,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                android:text="данные погоды
-" />
+                android:text="@string/weatherdata" />
 
             <EditText
                 android:id="@+id/editTextDate5"
@@ -97,7 +122,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Дата" />
+                android:text="@string/Дата"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/editTextNumber7"
@@ -105,8 +131,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                android:text="данные погоды
-" />
+                android:text="@string/weatherdata" />
 
             <EditText
                 android:id="@+id/editTextDate4"
@@ -114,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Дата" />
+                android:text="@string/Дата" />
 
             <EditText
                 android:id="@+id/editTextNumber8"
@@ -122,8 +147,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                android:text="данные погоды
-" />
+                android:text="@string/weatherdata" />
 
             <EditText
                 android:id="@+id/editTextDate3"
@@ -131,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Дата" />
+                android:text="@string/Дата" />
 
             <EditText
                 android:id="@+id/editTextNumber2"
@@ -139,58 +163,29 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                android:text="данные погоды
-" />
+                android:text="@string/weatherdata"
+                android:autofillHints="" />
 
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="412dp"
-        android:layout_height="328dp"
-        android:layout_marginTop="78dp"
-        android:layout_marginBottom="398dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <EditText
-            android:id="@+id/editTextDate2"
-            android:layout_width="424dp"
-            android:layout_height="133dp"
-            android:ems="10"
-            android:inputType="date"
-            android:text="Сегодня" />
-
-        <EditText
-            android:id="@+id/editTextNumber9"
-            android:layout_width="match_parent"
-            android:layout_height="196dp"
-            android:ems="10"
-            android:inputType="number"
-            android:text="данные погоды
-"/>
-
-    </LinearLayout>
-
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="353dp"
         android:layout_marginBottom="664dp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_manage" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView2"
@@ -200,9 +195,11 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="664dp"
-        android:text="Местоположение"
+        android:text="@string/Местоположение"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
 </androidx.constraintlayout.widget.ConstraintLayout>
