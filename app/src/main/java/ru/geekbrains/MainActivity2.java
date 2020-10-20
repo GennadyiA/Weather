@@ -6,18 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private final String TAG = "Activity";
-
     Spinner spinner;
     ArrayList spinnerArrayList;
     ArrayAdapter spinnerAdapter;
+    String city;
 
 
     @Override
@@ -36,6 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
         spinner = findViewById(R.id.spinner);
+        spinner.setOnItemSelectedListener(this);
         spinnerArrayList = new ArrayList();
 
         spinnerArrayList.add("Moscow");
@@ -47,10 +49,7 @@ public class MainActivity2 extends AppCompatActivity {
         spinner.setAdapter(spinnerAdapter);
     }
 
-    public void onClick(View view) {
-        Intent intent = new Intent(MainActivity2.this, MainActivity.class);
-        startActivity(intent);
-    }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -106,6 +105,21 @@ public class MainActivity2 extends AppCompatActivity {
         super.onDestroy();
         Toast.makeText(getApplicationContext(), "onDestroy()", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "Destroy");
+    }
+    public void onClick(View view) {
+        Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+        intent.putExtra("city", city);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        city = spinner.getSelectedItem().toString();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 
 
