@@ -6,16 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class MainActivity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private final String TAG = "Activity";
+    Spinner spinner;
+    ArrayList spinnerArrayList;
+    ArrayAdapter spinnerAdapter;
+    String city;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         String instanceState;
         if (savedInstanceState == null){
             instanceState = "Первый запуск!";
@@ -25,16 +34,19 @@ public class MainActivity extends AppCompatActivity {
         }
         Toast.makeText(getApplicationContext(), instanceState + " - onCreate()", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "Create");
-        Intent choosenCity = getIntent();
-        String city = choosenCity.getStringExtra("city");
-        TextView textView = findViewById(R.id.textView2);
-        textView.setText(city);
 
-    }
-    public void onClick(View view) {
-        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-        startActivity(intent);
 
+        spinner = findViewById(R.id.spinner);
+        spinner.setOnItemSelectedListener(this);
+        spinnerArrayList = new ArrayList();
+
+        spinnerArrayList.add("Moscow");
+        spinnerArrayList.add("Tokyo");
+        spinnerArrayList.add("Paris");
+
+        spinnerAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, spinnerArrayList);
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner.setAdapter(spinnerAdapter);
     }
 
 
@@ -94,4 +106,21 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onDestroy()", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "Destroy");
     }
+    public void onClick(View view) {
+        Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+        intent.putExtra("city", city);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        city = spinner.getSelectedItem().toString();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+
 }
