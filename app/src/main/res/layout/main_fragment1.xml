@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="415dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="398dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="415dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/Местоположение" />
+
+
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="date"
+            android:text="@string/Сегодня" />
+
+        <EditText
+            android:id="@+id/editTextNumber9"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/weatherdata" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
