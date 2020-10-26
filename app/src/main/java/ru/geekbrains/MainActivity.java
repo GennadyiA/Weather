@@ -16,17 +16,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*
-        Intent choosenCity = getIntent();
+/*
+    Intent choosenCity = getIntent();
         String city = choosenCity.getStringExtra("city");
         TextView textView = findViewById(R.id.textView2);
         textView.setText(city);
 
-    }
-    public void onClick(View view) {
-        Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            public void onClick(View view) {
+        Intent intent = new Intent(MainFragment1.this, SettingsActivity.class);
         startActivity(intent);
-*/
+    }
+ */
     }
 
 
