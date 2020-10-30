@@ -22,10 +22,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView2);
         textView.setText(city);
 
-            public void onClick(View view) {
-        Intent intent = new Intent(MainFragment1.this, SettingsActivity.class);
-        startActivity(intent);
-    }
+
  */
     }
 

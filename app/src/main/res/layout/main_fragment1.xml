@@ -30,11 +30,11 @@
                 android:layout_weight="30">
 
 
-                <Button
+                <ImageButton
                     android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/settings"
+                    app:srcCompat="@drawable/ic_baseline_settings_applications_24"
                     android:onClick="onClick"/>
             </FrameLayout>
 
@@ -50,6 +50,8 @@
                     android:layout_height="match_parent"
                     android:text="@string/Местоположение" />
 
+
+
             </FrameLayout>
 
 
@@ -60,17 +62,16 @@
 
 
         <TextView
-            android:id="@+id/editTextDate2"
+            android:id="@+id/today"
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:autofillHints=""
             android:ems="10"
             android:inputType="date"
-
-            android:text="@string/Сегодня" />
+ />
 
         <TextView
-            android:id="@+id/editTextNumber9"
+            android:id="@+id/weather"
             android:layout_width="match_parent"
             android:layout_height="196dp"
             android:ems="10"

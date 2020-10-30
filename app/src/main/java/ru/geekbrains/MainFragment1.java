@@ -6,19 +6,33 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
 import androidx.fragment.app.Fragment;
 
+import java.text.DateFormat;
 import java.util.Date;
 
 public class MainFragment1 extends Fragment implements View.OnClickListener {
+    String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View inflatedView = inflater.inflate(R.layout.main_fragment1, null);
-        Button button2 =   inflatedView.findViewById(R.id.button2);
+        View inflatedView = inflater.inflate(R.layout.main_fragment1, container, false);
+        ImageButton button2 =  inflatedView.findViewById(R.id.button2);
         button2.setOnClickListener(this);
-        return inflater.inflate(R.layout.main_fragment1, container, false);
+
+        TextView textView =  inflatedView.findViewById(R.id.today);
+        textView.setText(currentDateTimeString);
+
+
+
+        return inflatedView;
+
+
+
     }
 
     @Override
@@ -27,7 +41,7 @@ public class MainFragment1 extends Fragment implements View.OnClickListener {
         startActivity(intent);
     }
 
-    Date today = new Date();
+
 
 
 }
