@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent"   >
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -29,13 +30,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="30">
 
-
                 <ImageButton
                     android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_baseline_settings_applications_24"
-                    android:onClick="onClick"/>
+                    android:onClick="onClick"   />
+
             </FrameLayout>
 
             <FrameLayout
@@ -43,41 +44,74 @@
                 android:layout_height="match_parent"
                 android:layout_weight="70">
 
-                <TextView
-
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/Местоположение" />
-
-
-
+                <EditText
+                    android:id="@+id/textCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"/>
             </FrameLayout>
-
 
 
         </LinearLayout>
 
 
 
-
-        <TextView
+        <EditText
             android:id="@+id/today"
             android:layout_width="match_parent"
-            android:layout_height="76dp"
+            android:layout_height="50dp"
             android:autofillHints=""
             android:ems="10"
+            android:enabled="false"
             android:inputType="date"
- />
+            android:textColor="@color/colorPrimaryDark"/>
 
-        <TextView
-            android:id="@+id/weather"
+        <EditText
+            android:id="@+id/textTemprature"
             android:layout_width="match_parent"
-            android:layout_height="196dp"
+            android:layout_height="50dp"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark" />
+        <EditText
+            android:id="@+id/textPressure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/textHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark" />
+        <EditText
+            android:id="@+id/textWindspeed"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"/>
 
-            android:text="@string/weatherdata" />
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh"/>
 
 
     </LinearLayout>
