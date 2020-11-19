@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Weather</string>
+     <string name="Сегодня">Сегодня</string>
+    <string name="todo">TODO</string>
+    <string name="Дата1">Дата</string>
+    <string name="Дата2">Дата</string>
+    <string name="Дат3а">Дата</string>
+    <string name="Дата4">Дата</string>
+    <string name="weatherdata1">данные погоды</string>
+    <string name="weatherdata2">данные погоды</string>
+    <string name="weatherdata3">данные погоды</string>
+    <string name="weatherdata4">данные погоды</string>
+    <string name="weatherdata5">данные погоды</string>
+    <string name="Дата5">Дата</string>
+    <string name="weatherdata6">данные погоды</string>
+    <string name="weatherdata7">данные погоды</string>
+    <string name="weatherdata">данные погоды</string>
+    <string name="Дата6">Дата</string>
+    <string name="Дата7">Дата</string>
+    <string name="Дата">Дата</string>
+    <string name="choose">choose</string>
+    <string name="settings">Settings</string>
+    <string name="city">Город</string>
+    <string name="temperature">Температура</string>
+    <string name="pressure">Давление</string>
+    <string name="humidity">Влажность</string>
+    <string name="wind_speed">Скорость ветра</string>
+    <string name="refresh">Обновить</string>
+
 </resources>

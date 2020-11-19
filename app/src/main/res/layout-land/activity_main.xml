@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- это макет для портретной ориентации -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- это макет для альбомной ориентации -->
 
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="100">
 
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="50">
+        android:layout_width="wrap_content"
+        android:layout_weight="50"
+        android:layout_height="match_parent">
 
         <fragment
             android:id="@+id/cities1"
             android:name="ru.geekbrains.MainFragment1"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="50">
 
         <fragment
@@ -32,10 +31,4 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </FrameLayout>
-
-
-
-
-
-
 </LinearLayout>
