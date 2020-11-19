@@ -1,4 +1,4 @@
-package ru.geekbrains;
+package ru.geekbrains.WeatherApi;
 
 public class Clouds {
     private int all;
